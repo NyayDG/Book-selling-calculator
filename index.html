@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Sales Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Sales Tracker</h1>
+        <div class="input-container">
+            <label for="booksSold">Books Sold:</label>
+            <input type="number" id="booksSold">
+        </div>
+        <div class="input-container">
+            <label for="bookPrice">Book Price ($):</label>
+            <input type="number" id="bookPrice">
+            <button onclick="calculateTotal()">Calculate</button>
+        </div>
+        <div class="input-container">
+            <label for="moneyReceived">Money Received ($):</label>
+            <input type="number" id="moneyReceived">
+        </div>
+        <button onclick="recordSale()">Record Sale</button>
+        <div class="summary">
+            <p>Total Books Sold: <span id="totalBooksSold">0</span></p>
+            <p>Total Sales Amount: $<span id="totalSalesAmount">0</span></p>
+            <p>Money Given: $<span id="moneyGiven">0</span></p>
+            <p>Money Remaining: $<span id="moneyRemaining">0</span></p>
+        </div>
+        <button class="clear-button" onclick="clearPrices()">Clear</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
